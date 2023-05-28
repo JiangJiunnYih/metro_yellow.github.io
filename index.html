@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dba3bdf8397a63725b046b49a06f6af6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dba3bdf8397a63725b046b49a06f6af6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dba3bdf8397a63725b046b49a06f6af6 = L.map(
+                "map_dba3bdf8397a63725b046b49a06f6af6",
+                {
+                    center: [22.628302358618743, 120.30297404743283],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9eae07c3d357dd9305ee2379640853fb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var marker_8ecb01f34337dedd3542b58466d99451 = L.marker(
+                [22.6574083739417, 120.383523835389],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_52ba727088eb5082be1f1175e02919cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_8ecb01f34337dedd3542b58466d99451.setIcon(icon_52ba727088eb5082be1f1175e02919cf);
+        
+    
+        var popup_b9ffb47d611b8ae9d376548b5417c788 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c344de6be53d08ef4d9435e88fde4d = $(`<div id="html_e4c344de6be53d08ef4d9435e88fde4d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">坔埔站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">坔埔里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.383523835389</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6574083739417</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_b9ffb47d611b8ae9d376548b5417c788.setContent(html_e4c344de6be53d08ef4d9435e88fde4d);
+            
+        
+
+        marker_8ecb01f34337dedd3542b58466d99451.bindPopup(popup_b9ffb47d611b8ae9d376548b5417c788)
+        ;
+
+        
+    
+    
+            marker_8ecb01f34337dedd3542b58466d99451.bindTooltip(
+                `<div>
+                     坔埔站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ef8f800bb98e89b2acc7dc61506845a = L.marker(
+                [22.659573867861, 120.369549367684],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_6cc0da92ec4fd8c1c5486306af3be483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7ef8f800bb98e89b2acc7dc61506845a.setIcon(icon_6cc0da92ec4fd8c1c5486306af3be483);
+        
+    
+        var popup_f102430d050b211b67cdf552f700efb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75735d1d8c1a9b546bca1a3353625a1 = $(`<div id="html_e75735d1d8c1a9b546bca1a3353625a1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">崎子腳站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.369549367684</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.659573867861</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_f102430d050b211b67cdf552f700efb9.setContent(html_e75735d1d8c1a9b546bca1a3353625a1);
+            
+        
+
+        marker_7ef8f800bb98e89b2acc7dc61506845a.bindPopup(popup_f102430d050b211b67cdf552f700efb9)
+        ;
+
+        
+    
+    
+            marker_7ef8f800bb98e89b2acc7dc61506845a.bindTooltip(
+                `<div>
+                     崎子腳站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4815cf434ecdebf63dcce56a8a08913 = L.marker(
+                [22.6582636908338, 120.359922733753],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_4f8ae83d25655e8c7d9bd710843ae839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_e4815cf434ecdebf63dcce56a8a08913.setIcon(icon_4f8ae83d25655e8c7d9bd710843ae839);
+        
+    
+        var popup_a9a79d41fdf60407eb28ed06205c5c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fd2874149fa54d517c77b9463674aea = $(`<div id="html_2fd2874149fa54d517c77b9463674aea" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.359922733753</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6582636908338</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_a9a79d41fdf60407eb28ed06205c5c78.setContent(html_2fd2874149fa54d517c77b9463674aea);
+            
+        
+
+        marker_e4815cf434ecdebf63dcce56a8a08913.bindPopup(popup_a9a79d41fdf60407eb28ed06205c5c78)
+        ;
+
+        
+    
+    
+            marker_e4815cf434ecdebf63dcce56a8a08913.bindTooltip(
+                `<div>
+                     鳥松站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b003f719022d3e1a7c101ca1dd3323c2 = L.marker(
+                [22.6509, 120.3553],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_b4eba4414d7aa1c241fccf88b70b7745 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_b003f719022d3e1a7c101ca1dd3323c2.setIcon(icon_b4eba4414d7aa1c241fccf88b70b7745);
+        
+    
+        var popup_be37ef25f04a2118cacaf58bf951daeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6fd51bb425b9c7d00454059312e6c2b = $(`<div id="html_f6fd51bb425b9c7d00454059312e6c2b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">長庚醫院站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.3553</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6509</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_be37ef25f04a2118cacaf58bf951daeb.setContent(html_f6fd51bb425b9c7d00454059312e6c2b);
+            
+        
+
+        marker_b003f719022d3e1a7c101ca1dd3323c2.bindPopup(popup_be37ef25f04a2118cacaf58bf951daeb)
+        ;
+
+        
+    
+    
+            marker_b003f719022d3e1a7c101ca1dd3323c2.bindTooltip(
+                `<div>
+                     長庚醫院站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e0b847f13939b6d4c6d2d7575775d43 = L.marker(
+                [22.65003, 120.34811],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_6ae4e8901e0c7ecee66a9a2cd5783318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_4e0b847f13939b6d4c6d2d7575775d43.setIcon(icon_6ae4e8901e0c7ecee66a9a2cd5783318);
+        
+    
+        var popup_1a6079c4d3e59c9050fe7032e546e774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81eafab451d059ce1c30ef83ba82ab09 = $(`<div id="html_81eafab451d059ce1c30ef83ba82ab09" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">澄清湖站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.34811</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.65003</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_1a6079c4d3e59c9050fe7032e546e774.setContent(html_81eafab451d059ce1c30ef83ba82ab09);
+            
+        
+
+        marker_4e0b847f13939b6d4c6d2d7575775d43.bindPopup(popup_1a6079c4d3e59c9050fe7032e546e774)
+        ;
+
+        
+    
+    
+            marker_4e0b847f13939b6d4c6d2d7575775d43.bindTooltip(
+                `<div>
+                     澄清湖站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d65353557487292d5dbf13beffef68db = L.marker(
+                [22.6523924393387, 120.340072561134],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_c7264b569ef75bae46e47ee4610c878f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d65353557487292d5dbf13beffef68db.setIcon(icon_c7264b569ef75bae46e47ee4610c878f);
+        
+    
+        var popup_89122f83ae156cc3a27a397b69a6de29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0396dade1deea953518eb8de98b5e6c6 = $(`<div id="html_0396dade1deea953518eb8de98b5e6c6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">大華站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳥松區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">大華里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.340072561134</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6523924393387</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_89122f83ae156cc3a27a397b69a6de29.setContent(html_0396dade1deea953518eb8de98b5e6c6);
+            
+        
+
+        marker_d65353557487292d5dbf13beffef68db.bindPopup(popup_89122f83ae156cc3a27a397b69a6de29)
+        ;
+
+        
+    
+    
+            marker_d65353557487292d5dbf13beffef68db.bindTooltip(
+                `<div>
+                     大華站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9701879ca118840cb7bbc9f31ea5a3c2 = L.marker(
+                [22.6550589687461, 120.33487311587],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_f0afccffc1a6e3b7496b605dcbcd6080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_9701879ca118840cb7bbc9f31ea5a3c2.setIcon(icon_f0afccffc1a6e3b7496b605dcbcd6080);
+        
+    
+        var popup_f5727001497edf93a402ade2765ff750 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fb9db7a789b5207b17402e239f8074e = $(`<div id="html_1fb9db7a789b5207b17402e239f8074e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">本館站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">本館里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.33487311587</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6550589687461</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_f5727001497edf93a402ade2765ff750.setContent(html_1fb9db7a789b5207b17402e239f8074e);
+            
+        
+
+        marker_9701879ca118840cb7bbc9f31ea5a3c2.bindPopup(popup_f5727001497edf93a402ade2765ff750)
+        ;
+
+        
+    
+    
+            marker_9701879ca118840cb7bbc9f31ea5a3c2.bindTooltip(
+                `<div>
+                     本館站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8f3d810e4c851a7d32084f07520ab7e = L.marker(
+                [22.6502656614805, 120.325119181706],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_72a3861d32f8345879ff8d78c5bb727a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a8f3d810e4c851a7d32084f07520ab7e.setIcon(icon_72a3861d32f8345879ff8d78c5bb727a);
+        
+    
+        var popup_ba5d1416f637ce12c37255f6fc133d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f746c421aa04715aeaae45e18b8ba5a = $(`<div id="html_6f746c421aa04715aeaae45e18b8ba5a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">高雄高工站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">本和里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.325119181706</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6502656614805</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_ba5d1416f637ce12c37255f6fc133d0b.setContent(html_6f746c421aa04715aeaae45e18b8ba5a);
+            
+        
+
+        marker_a8f3d810e4c851a7d32084f07520ab7e.bindPopup(popup_ba5d1416f637ce12c37255f6fc133d0b)
+        ;
+
+        
+    
+    
+            marker_a8f3d810e4c851a7d32084f07520ab7e.bindTooltip(
+                `<div>
+                     高雄高工站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a055a1373a8f96aff284ac8474abf7fd = L.marker(
+                [22.6459573690137, 120.314476266484],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_51389db85421d882d2f33452a89ebe6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a055a1373a8f96aff284ac8474abf7fd.setIcon(icon_51389db85421d882d2f33452a89ebe6f);
+        
+    
+        var popup_f37d204a4d0e952120f8654825e0eab8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48216688ecc0fca1fc50fe734ebb0f9a = $(`<div id="html_48216688ecc0fca1fc50fe734ebb0f9a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">大港站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">安生里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.314476266484</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6459573690137</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_f37d204a4d0e952120f8654825e0eab8.setContent(html_48216688ecc0fca1fc50fe734ebb0f9a);
+            
+        
+
+        marker_a055a1373a8f96aff284ac8474abf7fd.bindPopup(popup_f37d204a4d0e952120f8654825e0eab8)
+        ;
+
+        
+    
+    
+            marker_a055a1373a8f96aff284ac8474abf7fd.bindTooltip(
+                `<div>
+                     大港站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7fdb56fc1d382865728a05999090917 = L.marker(
+                [22.6393417524988, 120.314038500812],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_08b2b269e131b79d302fda8c2721b9ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d7fdb56fc1d382865728a05999090917.setIcon(icon_08b2b269e131b79d302fda8c2721b9ff);
+        
+    
+        var popup_4a327fbfeeaf0262e8cdb164b02ecc36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_581ab742401cb57ba7ce7cc9bc6a814b = $(`<div id="html_581ab742401cb57ba7ce7cc9bc6a814b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">民族站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">安寧里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.314038500812</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6393417524988</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_4a327fbfeeaf0262e8cdb164b02ecc36.setContent(html_581ab742401cb57ba7ce7cc9bc6a814b);
+            
+        
+
+        marker_d7fdb56fc1d382865728a05999090917.bindPopup(popup_4a327fbfeeaf0262e8cdb164b02ecc36)
+        ;
+
+        
+    
+    
+            marker_d7fdb56fc1d382865728a05999090917.bindTooltip(
+                `<div>
+                     民族站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_714cf8dea6bb687867985bcf69a0b5d4 = L.marker(
+                [22.6300032839061, 120.313253597247],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_6f1948f482a5dfef51f584bdb608b476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_714cf8dea6bb687867985bcf69a0b5d4.setIcon(icon_6f1948f482a5dfef51f584bdb608b476);
+        
+    
+        var popup_f8b5a092cce47cf07b626247dadddd99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9acd6ed10606510dd60b98d94df6383c = $(`<div id="html_9acd6ed10606510dd60b98d94df6383c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">信義國小站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓雅區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">尚義里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.313253597247</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6300032839061</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_f8b5a092cce47cf07b626247dadddd99.setContent(html_9acd6ed10606510dd60b98d94df6383c);
+            
+        
+
+        marker_714cf8dea6bb687867985bcf69a0b5d4.bindPopup(popup_f8b5a092cce47cf07b626247dadddd99)
+        ;
+
+        
+    
+    
+            marker_714cf8dea6bb687867985bcf69a0b5d4.bindTooltip(
+                `<div>
+                     信義國小站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56aebae250f0c3eae4005f84b6dca8ca = L.marker(
+                [22.627604122074, 120.313122443122],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_f993e12f816f6f59ff5b6609d2cb17cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_56aebae250f0c3eae4005f84b6dca8ca.setIcon(icon_f993e12f816f6f59ff5b6609d2cb17cd);
+        
+    
+        var popup_a08b8bca26c9449fb14dbdce1fdb4a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ca30a86feb574da2debc2a5759e5fd = $(`<div id="html_55ca30a86feb574da2debc2a5759e5fd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">四維行政中心站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">新興區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">德生里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.313122443122</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.627604122074</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_a08b8bca26c9449fb14dbdce1fdb4a94.setContent(html_55ca30a86feb574da2debc2a5759e5fd);
+            
+        
+
+        marker_56aebae250f0c3eae4005f84b6dca8ca.bindPopup(popup_a08b8bca26c9449fb14dbdce1fdb4a94)
+        ;
+
+        
+    
+    
+            marker_56aebae250f0c3eae4005f84b6dca8ca.bindTooltip(
+                `<div>
+                     四維行政中心站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_629936c05208b92f0f26984bd3a5d089 = L.marker(
+                [22.6171082267747, 120.314029523154],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_79a887d92816ebcd9288d293430c05ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_629936c05208b92f0f26984bd3a5d089.setIcon(icon_79a887d92816ebcd9288d293430c05ac);
+        
+    
+        var popup_0a219a9b1d61e687e99d871a38da13b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a7e48ae341308a2f64d00ae99be1bc6 = $(`<div id="html_8a7e48ae341308a2f64d00ae99be1bc6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">三多市場站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓雅區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">林富里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.314029523154</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6171082267747</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_0a219a9b1d61e687e99d871a38da13b4.setContent(html_8a7e48ae341308a2f64d00ae99be1bc6);
+            
+        
+
+        marker_629936c05208b92f0f26984bd3a5d089.bindPopup(popup_0a219a9b1d61e687e99d871a38da13b4)
+        ;
+
+        
+    
+    
+            marker_629936c05208b92f0f26984bd3a5d089.bindTooltip(
+                `<div>
+                     三多市場站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2797523054fe338ab47de4a5daef87b6 = L.marker(
+                [22.6139551005494, 120.304547726097],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_ea252f9c655cd31fcc056c7f8ea2433a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_2797523054fe338ab47de4a5daef87b6.setIcon(icon_ea252f9c655cd31fcc056c7f8ea2433a);
+        
+    
+        var popup_361e15821b1db7fcbee55b19aa74bd98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56ef1d34629e541ba9d024fd6e512d9a = $(`<div id="html_56ef1d34629e541ba9d024fd6e512d9a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">三多商圈站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓雅區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">仁政里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.304547726097</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6139551005494</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_361e15821b1db7fcbee55b19aa74bd98.setContent(html_56ef1d34629e541ba9d024fd6e512d9a);
+            
+        
+
+        marker_2797523054fe338ab47de4a5daef87b6.bindPopup(popup_361e15821b1db7fcbee55b19aa74bd98)
+        ;
+
+        
+    
+    
+            marker_2797523054fe338ab47de4a5daef87b6.bindTooltip(
+                `<div>
+                     三多商圈站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ccb699d160e3f5681ebcfc6681e991c = L.marker(
+                [22.611012428722, 120.295593077468],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_2f191f0e3245fea75b1502d76e305fa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_3ccb699d160e3f5681ebcfc6681e991c.setIcon(icon_2f191f0e3245fea75b1502d76e305fa0);
+        
+    
+        var popup_8d06e36f12a0727e332aff1f715cdbc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2b691f43b67be867284948eb50c758b = $(`<div id="html_f2b691f43b67be867284948eb50c758b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">旅運中心站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓雅區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓昇里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.295593077468</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.611012428722</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_8d06e36f12a0727e332aff1f715cdbc0.setContent(html_f2b691f43b67be867284948eb50c758b);
+            
+        
+
+        marker_3ccb699d160e3f5681ebcfc6681e991c.bindPopup(popup_8d06e36f12a0727e332aff1f715cdbc0)
+        ;
+
+        
+    
+    
+            marker_3ccb699d160e3f5681ebcfc6681e991c.bindTooltip(
+                `<div>
+                     旅運中心站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae0a4b2bfe98d922e01c3dbfb5cfefbd = L.marker(
+                [22.6393844454623, 120.345097562205],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_c256fa7a33a569de8aa125df2a2acabf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_ae0a4b2bfe98d922e01c3dbfb5cfefbd.setIcon(icon_c256fa7a33a569de8aa125df2a2acabf);
+        
+    
+        var popup_5a4829341cd33a39d5620af06bdebdec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd29216a9b9d412553cfb58fea68fc15 = $(`<div id="html_dd29216a9b9d412553cfb58fea68fc15" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">寶業滯洪公園站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">本揚里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.345097562205</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6393844454623</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_5a4829341cd33a39d5620af06bdebdec.setContent(html_dd29216a9b9d412553cfb58fea68fc15);
+            
+        
+
+        marker_ae0a4b2bfe98d922e01c3dbfb5cfefbd.bindPopup(popup_5a4829341cd33a39d5620af06bdebdec)
+        ;
+
+        
+    
+    
+            marker_ae0a4b2bfe98d922e01c3dbfb5cfefbd.bindTooltip(
+                `<div>
+                     寶業滯洪公園站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7d791e2e444ae764150e0e0a339f36d = L.marker(
+                [22.635144, 120.3444028],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_98d8e94a3a09b96f55c6c49f1191b372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_c7d791e2e444ae764150e0e0a339f36d.setIcon(icon_98d8e94a3a09b96f55c6c49f1191b372);
+        
+    
+        var popup_c1ee851820f125f327c3bc2c49efe4a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4409fb2de459d3f8ec2eddce200d44d = $(`<div id="html_d4409fb2de459d3f8ec2eddce200d44d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">正義站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">三民區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">寶民里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.3444028</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.635144</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_c1ee851820f125f327c3bc2c49efe4a1.setContent(html_d4409fb2de459d3f8ec2eddce200d44d);
+            
+        
+
+        marker_c7d791e2e444ae764150e0e0a339f36d.bindPopup(popup_c1ee851820f125f327c3bc2c49efe4a1)
+        ;
+
+        
+    
+    
+            marker_c7d791e2e444ae764150e0e0a339f36d.bindTooltip(
+                `<div>
+                     正義站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdbb128e81110cf6012446678ecb6c90 = L.marker(
+                [22.6241168387855, 120.344252209122],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_edf67d52d2330a1280e8d1c84cbb99df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_fdbb128e81110cf6012446678ecb6c90.setIcon(icon_edf67d52d2330a1280e8d1c84cbb99df);
+        
+    
+        var popup_9ae7a8cf9e09c4cf1af35a94decb3fc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb8c87638a44fe25c6b79f9cc1854175 = $(`<div id="html_cb8c87638a44fe25c6b79f9cc1854175" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">衛武營站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">苓雅區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">衛武里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.344252209122</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6241168387855</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_9ae7a8cf9e09c4cf1af35a94decb3fc6.setContent(html_cb8c87638a44fe25c6b79f9cc1854175);
+            
+        
+
+        marker_fdbb128e81110cf6012446678ecb6c90.bindPopup(popup_9ae7a8cf9e09c4cf1af35a94decb3fc6)
+        ;
+
+        
+    
+    
+            marker_fdbb128e81110cf6012446678ecb6c90.bindTooltip(
+                `<div>
+                     衛武營站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82676002e15a17aa40eb8a4aae37c1a2 = L.marker(
+                [22.6177905175423, 120.345451935404],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_fe490e56c0477bc9605fb6cdcb676752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_82676002e15a17aa40eb8a4aae37c1a2.setIcon(icon_fe490e56c0477bc9605fb6cdcb676752);
+        
+    
+        var popup_7b5c907eac63cfcff533840a452386de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7ca18d60c195b0a09592902f4bc7c8d = $(`<div id="html_f7ca18d60c195b0a09592902f4bc7c8d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">新甲站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳳山區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">協和里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.345451935404</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.6177905175423</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_7b5c907eac63cfcff533840a452386de.setContent(html_f7ca18d60c195b0a09592902f4bc7c8d);
+            
+        
+
+        marker_82676002e15a17aa40eb8a4aae37c1a2.bindPopup(popup_7b5c907eac63cfcff533840a452386de)
+        ;
+
+        
+    
+    
+            marker_82676002e15a17aa40eb8a4aae37c1a2.bindTooltip(
+                `<div>
+                     新甲站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_172caeb2aba754514f6c985af5b5745c = L.marker(
+                [22.607280055148, 120.345596251889],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_c98aa043fe12967127714218e728738f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_172caeb2aba754514f6c985af5b5745c.setIcon(icon_c98aa043fe12967127714218e728738f);
+        
+    
+        var popup_0bd787a1368af0b057e4ac78811f7195 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a325a708f104d45f3600875fa6cf8fa1 = $(`<div id="html_a325a708f104d45f3600875fa6cf8fa1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">七老爺站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳳山區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">新甲里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.345596251889</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.607280055148</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_0bd787a1368af0b057e4ac78811f7195.setContent(html_a325a708f104d45f3600875fa6cf8fa1);
+            
+        
+
+        marker_172caeb2aba754514f6c985af5b5745c.bindPopup(popup_0bd787a1368af0b057e4ac78811f7195)
+        ;
+
+        
+    
+    
+            marker_172caeb2aba754514f6c985af5b5745c.bindTooltip(
+                `<div>
+                     七老爺站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1aa05478a6fd8b9300eda599e90ea407 = L.marker(
+                [22.599258, 120.3373639],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_231ed3080530b6923d666ffa3eb6f2ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_1aa05478a6fd8b9300eda599e90ea407.setIcon(icon_231ed3080530b6923d666ffa3eb6f2ad);
+        
+    
+        var popup_6a72902d074761a1039237383b2c7e64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42d370f609ce97c6dd055bf767544773 = $(`<div id="html_42d370f609ce97c6dd055bf767544773" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">五甲站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳳山區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">一甲里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.3373639</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.599258</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_6a72902d074761a1039237383b2c7e64.setContent(html_42d370f609ce97c6dd055bf767544773);
+            
+        
+
+        marker_1aa05478a6fd8b9300eda599e90ea407.bindPopup(popup_6a72902d074761a1039237383b2c7e64)
+        ;
+
+        
+    
+    
+            marker_1aa05478a6fd8b9300eda599e90ea407.bindTooltip(
+                `<div>
+                     五甲站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f877e46d57fca14e42d3981209560c85 = L.marker(
+                [22.5934444, 120.3283611],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_df442267a5b9814bc3e3abb4463362c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_f877e46d57fca14e42d3981209560c85.setIcon(icon_df442267a5b9814bc3e3abb4463362c9);
+        
+    
+        var popup_61f1edfa86cc590c5cbf4c9ef1901692 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_003095f93fd7a968f78bda861a90bcd0 = $(`<div id="html_003095f93fd7a968f78bda861a90bcd0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">龍成宮站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">鳳山區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">鎮南里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.3283611</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.5934444</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_61f1edfa86cc590c5cbf4c9ef1901692.setContent(html_003095f93fd7a968f78bda861a90bcd0);
+            
+        
+
+        marker_f877e46d57fca14e42d3981209560c85.bindPopup(popup_61f1edfa86cc590c5cbf4c9ef1901692)
+        ;
+
+        
+    
+    
+            marker_f877e46d57fca14e42d3981209560c85.bindTooltip(
+                `<div>
+                     龍成宮站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ec2e3eb5537ca6a782e978613cd8cce = L.marker(
+                [22.587215, 120.3205222],
+                {}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var icon_ff9d94032a7cea5ff66771d46af2c255 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_5ec2e3eb5537ca6a782e978613cd8cce.setIcon(icon_ff9d94032a7cea5ff66771d46af2c255);
+        
+    
+        var popup_85745ffb04129f7934972910dac1fe1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ed81e02877a49d53275a36d85a7fabd = $(`<div id="html_4ed81e02877a49d53275a36d85a7fabd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <title>高雄捷運黃線站點圖</title> </head>     <table style="height: 150px; width: 200px;"> <tbody> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">車站名稱</span></td> <td style="width: 120px;background-color: #ABFFFF;">前鎮高中站</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">行政區</span></td> <td style="width: 120px;background-color: #ABFFFF;">前鎮區</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">村里</span></td> <td style="width: 120px;background-color: #ABFFFF;">平等里</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">經度</span></td> <td style="width: 120px;background-color: #ABFFFF;">120.3205222</td> </tr> <tr> <td style="background-color: #82FFFF;"><span style="color: #000000;">緯度</span></td> <td style="width: 120px;background-color: #ABFFFF;">22.587215</td> </tr> </tbody> </table>  </html> </div>`)[0];
+                popup_85745ffb04129f7934972910dac1fe1b.setContent(html_4ed81e02877a49d53275a36d85a7fabd);
+            
+        
+
+        marker_5ec2e3eb5537ca6a782e978613cd8cce.bindPopup(popup_85745ffb04129f7934972910dac1fe1b)
+        ;
+
+        
+    
+    
+            marker_5ec2e3eb5537ca6a782e978613cd8cce.bindTooltip(
+                `<div>
+                     前鎮高中站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f3bf99f404acd0e4ad9af351cc838df3 = L.polyline(
+                [[22.6364, 120.34438], [22.635144, 120.3444028]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_416fa92edd623d09b41eafc131f84be8 = L.polyline(
+                [[22.635144, 120.3444028], [22.62411684, 120.3442522]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_3d684fc40bf910ecd62bec32dfc48dc0 = L.polyline(
+                [[22.62411684, 120.3442522], [22.621507276721896, 120.34514645447969]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_3e2183700c49e67498b279c3b224ca20 = L.polyline(
+                [[22.621507276721896, 120.34514645447969], [22.61779052, 120.3454519]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_7d106f4fe6319987e42bacc6e1594d00 = L.polyline(
+                [[22.64835967431187, 120.34744054793623], [22.64786915202124, 120.34654907594725]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_d6063cdc52c5d4ae333c24e5c4189091 = L.polyline(
+                [[22.657391, 120.383512], [22.657668, 120.383061], [22.65859, 120.381562], [22.658993, 120.380956], [22.65925, 120.380509], [22.659379, 120.380189], [22.659488, 120.379803], [22.659625, 120.37913], [22.659684, 120.378509], [22.659655, 120.376551], [22.659652, 120.376353], [22.659639, 120.375462], [22.659609, 120.373399], [22.659596, 120.372522], [22.659581, 120.371706], [22.659541, 120.36955]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_e9621555b2a1821bfe5c0a80e01de79b = L.polyline(
+                [[22.659541, 120.36955], [22.659532, 120.369057], [22.659525, 120.36873], [22.659506, 120.367676], [22.65949, 120.366838], [22.659478, 120.366489], [22.65945, 120.366168], [22.659423, 120.365887], [22.659388, 120.365581], [22.659382, 120.36557], [22.659219, 120.36434], [22.659214, 120.364305], [22.659198, 120.364198], [22.659147, 120.364086], [22.659123, 120.363952], [22.659119, 120.363921], [22.659, 120.363095], [22.658995, 120.363058], [22.658976, 120.362928], [22.658959, 120.362764], [22.658942, 120.362647], [22.658937, 120.362606], [22.658843, 120.36191], [22.658768, 120.361576], [22.65876, 120.36154], [22.658742, 120.361461], [22.658701, 120.361283], [22.658585, 120.360815], [22.658387, 120.360229], [22.658244, 120.359935]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_cb53d8adfc526aaa4eeaaf528cdab44c = L.polyline(
+                [[22.658244, 120.359935], [22.657936, 120.359303], [22.65783, 120.359084], [22.657774, 120.35891], [22.657754, 120.358864], [22.657737, 120.358823], [22.657658, 120.358638], [22.657553, 120.358368], [22.657441, 120.358137], [22.657325, 120.357938], [22.657259, 120.357869], [22.657202, 120.357832], [22.65676, 120.357584], [22.656429, 120.357403], [22.656229, 120.357341], [22.655992, 120.35723], [22.655845, 120.35718], [22.655728, 120.357105], [22.655464, 120.356914], [22.655264, 120.356761], [22.655106, 120.356691], [22.654954, 120.356669], [22.65465, 120.356707], [22.653308, 120.356842], [22.653217, 120.356851], [22.652937, 120.356833], [22.651157, 120.356028], [22.651045, 120.355916], [22.65098, 120.355819], [22.650899, 120.355687], [22.650774, 120.355399], [22.65076, 120.355339]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_0ee52c5a9aedbe405a4518806410dddf = L.polyline(
+                [[22.65076, 120.355339], [22.650707, 120.355116], [22.650604, 120.35445], [22.650578, 120.354098], [22.650547, 120.353586], [22.65057, 120.353108], [22.650596, 120.352813], [22.65066, 120.352494], [22.651151, 120.351187], [22.651953, 120.349497], [22.651972, 120.349457], [22.652049, 120.349295], [22.652154, 120.34903], [22.652059, 120.348985], [22.651894, 120.348911], [22.651233, 120.348619], [22.651203, 120.348606], [22.651119, 120.348569], [22.65101, 120.34852], [22.650974, 120.348504], [22.650583, 120.348332], [22.650547, 120.348316], [22.650416, 120.348258], [22.650258, 120.348194], [22.650106, 120.348132], [22.650064, 120.348116], [22.650032, 120.348103]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_0129944097103f3d302333d6ac9a1932 = L.polyline(
+                [[22.650032, 120.348103], [22.648499, 120.347482], [22.648348, 120.347421], [22.648268, 120.347385], [22.647933, 120.347236], [22.64764, 120.347124], [22.647617, 120.347115], [22.647492, 120.347067], [22.647276, 120.347016], [22.647214, 120.347001], [22.646578, 120.346849], [22.645624, 120.346638], [22.645548, 120.346619], [22.645255, 120.346549], [22.644907, 120.346459], [22.644213, 120.346294], [22.643128, 120.346029], [22.641898, 120.345693], [22.640846, 120.345446], [22.640365, 120.345325], [22.640331, 120.345317], [22.640282, 120.345304], [22.640197, 120.345284], [22.640161, 120.345275], [22.639701, 120.345164], [22.639387, 120.345085]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_66d2eab1b57715770e5e74cafc532c94 = L.polyline(
+                [[22.639387, 120.345085], [22.638702, 120.344913], [22.638684, 120.344909], [22.638566, 120.344879], [22.638473, 120.344857], [22.638399, 120.34484], [22.638039, 120.344755], [22.637456, 120.344618], [22.637223, 120.344557], [22.637194, 120.34455], [22.637065, 120.344516], [22.636857, 120.344481], [22.636491, 120.344418], [22.636397, 120.344402]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_2bb72f32de8b9bec34884bd24df4c030 = L.polyline(
+                [[22.617794, 120.34549], [22.617534, 120.345517], [22.617412, 120.345529], [22.617284, 120.345525], [22.617104, 120.34552], [22.616697, 120.345513], [22.616298, 120.345506], [22.616091, 120.345493], [22.616011, 120.345488], [22.615953, 120.345575], [22.615799, 120.345573], [22.613987, 120.345542], [22.613909, 120.345541], [22.613866, 120.34554], [22.613171, 120.345517], [22.613092, 120.345514], [22.612936, 120.345513], [22.61213, 120.345505], [22.612091, 120.345504], [22.611954, 120.345503], [22.611157, 120.345492], [22.61012, 120.345476], [22.610032, 120.345474], [22.609918, 120.345473], [22.609299, 120.345466], [22.608865, 120.34546], [22.608583, 120.345463], [22.607281, 120.345602]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_f9f21d844984ed95baefe6edc5eef9bb = L.polyline(
+                [[22.607281, 120.345602], [22.606843, 120.345649], [22.606811, 120.345651], [22.606627, 120.345671], [22.606504, 120.345688], [22.606348, 120.345695], [22.606299, 120.345697], [22.605605, 120.345738], [22.605518, 120.345743], [22.605443, 120.345754], [22.605308, 120.345828], [22.605253, 120.345895], [22.605107, 120.34579], [22.604838, 120.345615], [22.604637, 120.345484], [22.604499, 120.345132], [22.604336, 120.344898], [22.604029, 120.344456], [22.603941, 120.344313], [22.603216, 120.34322], [22.602467, 120.342131], [22.602412, 120.34205], [22.602001, 120.341405], [22.601601, 120.340819], [22.601369, 120.340509], [22.601207, 120.340286], [22.601099, 120.340119], [22.600941, 120.339874], [22.600776, 120.339617], [22.599933, 120.338387], [22.599903, 120.338344], [22.599533, 120.337837], [22.599312, 120.337552], [22.599204, 120.337413]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_7405a06b69dc3a52215bdbe9411ecb04 = L.polyline(
+                [[22.599204, 120.337413], [22.599096, 120.337273], [22.599038, 120.337187], [22.598527, 120.33653], [22.598378, 120.336335], [22.598143, 120.336016], [22.598025, 120.335851], [22.597725, 120.335445], [22.59733, 120.334864], [22.596988, 120.334333], [22.596857, 120.334136], [22.5968, 120.334051], [22.596739, 120.333934], [22.5966, 120.333672], [22.596422, 120.333337], [22.596264, 120.332983], [22.596208, 120.332829], [22.596174, 120.332695], [22.596082, 120.332331], [22.596055, 120.332225], [22.595819, 120.331744], [22.595613, 120.331347], [22.595477, 120.331124], [22.595352, 120.33093], [22.595017, 120.330535], [22.594762, 120.330234], [22.594557, 120.329973], [22.594281, 120.329624], [22.594109, 120.329408], [22.593953, 120.329213], [22.593896, 120.329136], [22.593424, 120.328474], [22.593382, 120.328404]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_579629ba627959e7b5560953549ea9f6 = L.polyline(
+                [[22.593382, 120.328404], [22.593323, 120.328303], [22.593015, 120.327895], [22.592968, 120.327825], [22.592635, 120.327322], [22.592545, 120.327186], [22.592167, 120.326667], [22.591679, 120.326076], [22.591419, 120.325747], [22.591335, 120.325643], [22.591067, 120.325311], [22.590949, 120.32518], [22.590634, 120.324835], [22.590419, 120.3246], [22.58989, 120.324001], [22.589015, 120.32291], [22.588983, 120.322871], [22.588701, 120.322481], [22.588695, 120.322473], [22.588657, 120.322422], [22.588627, 120.322381], [22.588557, 120.322285], [22.588489, 120.322192], [22.588441, 120.322126], [22.588398, 120.322068], [22.588372, 120.322032], [22.588297, 120.32193], [22.588286, 120.321918], [22.58824, 120.321869], [22.588195, 120.321811], [22.588118, 120.321715], [22.588103, 120.321696], [22.587603, 120.321074], [22.587428, 120.320831], [22.587358, 120.320724], [22.587225, 120.320552], [22.587207, 120.320529]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_00f7c1f0bc9cba2dd48ff2c45c0d44f5 = L.polyline(
+                [[22.64786, 120.346542], [22.648416, 120.34575], [22.649319, 120.344463], [22.649433, 120.3443], [22.64957, 120.344105], [22.649709, 120.343905], [22.65012, 120.343319], [22.650236, 120.343155], [22.650444, 120.342857], [22.650539, 120.342728], [22.650775, 120.342385], [22.65092, 120.342179], [22.65167, 120.341109], [22.652191, 120.340366], [22.652268, 120.340257], [22.652397, 120.340077]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_cc89541c2565d768b8594e9d6ccff02b = L.polyline(
+                [[22.652397, 120.340077], [22.652489, 120.339949], [22.652513, 120.339917], [22.65278, 120.339546], [22.653221, 120.338933], [22.653286, 120.338843], [22.653668, 120.338287], [22.65381, 120.338089], [22.653852, 120.338029], [22.654032, 120.337781], [22.654155, 120.337619], [22.654335, 120.337402], [22.654495, 120.33722], [22.654737, 120.336965], [22.654988, 120.336689], [22.65557, 120.336025], [22.655003, 120.334944], [22.654988, 120.334913]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_0a9ead4d74530dea563b5113f7302518 = L.polyline(
+                [[22.654988, 120.334913], [22.654776, 120.334471], [22.654458, 120.333814], [22.654186, 120.333263], [22.654004, 120.332904], [22.653833, 120.332544], [22.653696, 120.332257], [22.653613, 120.332078], [22.653279, 120.331391], [22.652891, 120.33061], [22.65283, 120.330465], [22.652577, 120.329929], [22.652291, 120.329311], [22.652073, 120.328864], [22.652045, 120.328808], [22.652014, 120.328747], [22.651959, 120.32863], [22.651409, 120.327476], [22.650876, 120.3264], [22.6506, 120.325814], [22.650272, 120.325119], [22.650269, 120.325122]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_c35fad2decb31a2f065a9cf95c79712b = L.polyline(
+                [[22.650269, 120.325122], [22.650272, 120.325119], [22.649818, 120.324253], [22.64974, 120.324103], [22.649638, 120.323885], [22.649347, 120.323253], [22.649127, 120.322766], [22.649002, 120.322409], [22.648836, 120.321687], [22.648775, 120.321415], [22.648596, 120.320432], [22.648432, 120.319561], [22.648301, 120.318973], [22.648102, 120.31777], [22.648069, 120.317586], [22.647941, 120.316882], [22.647912, 120.316753], [22.647894, 120.316662], [22.647817, 120.316204], [22.647724, 120.315743], [22.647673, 120.315472], [22.647632, 120.315315], [22.647562, 120.315049], [22.647547, 120.314991], [22.647496, 120.314838], [22.647474, 120.31468], [22.647434, 120.314582], [22.647314, 120.314565], [22.647118, 120.314551], [22.647034, 120.314544], [22.645959, 120.314451]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_12277ecad7b8f2c00dd71f0e4b044e52 = L.polyline(
+                [[22.645959, 120.314451], [22.64491, 120.314361], [22.644857, 120.314357], [22.644634, 120.314337], [22.644544, 120.314321], [22.644521, 120.314324], [22.644262, 120.314292], [22.644212, 120.314286], [22.644174, 120.314283], [22.643193, 120.314244], [22.642539, 120.314187], [22.640667, 120.314017], [22.640619, 120.314017], [22.640479, 120.314003], [22.640395, 120.313994], [22.640183, 120.31398], [22.639897, 120.313957], [22.639729, 120.313972], [22.637971, 120.313824], [22.635766, 120.313652], [22.635282, 120.313604], [22.635295, 120.313719], [22.635409, 120.313722], [22.635761, 120.313743], [22.637922, 120.313894], [22.639233, 120.314], [22.639344, 120.31401]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_e4a0be6885fc49e38cefba9269bc5239 = L.polyline(
+                [[22.639344, 120.31401], [22.640178, 120.314085], [22.640378, 120.314119], [22.640471, 120.314129], [22.640479, 120.314003], [22.640395, 120.313994], [22.640183, 120.31398], [22.639897, 120.313957], [22.639729, 120.313972], [22.637971, 120.313824], [22.635766, 120.313652], [22.635282, 120.313604], [22.635131, 120.313591], [22.634537, 120.313538], [22.633771, 120.313475], [22.632996, 120.313427], [22.632186, 120.313376], [22.631429, 120.313327], [22.630686, 120.313287], [22.630513, 120.313269], [22.630006, 120.31322]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_ea912c9fd4274203711defe4d8241e73 = L.polyline(
+                [[22.630006, 120.31322], [22.629793, 120.3132], [22.628838, 120.313575], [22.628761, 120.313605], [22.628708, 120.313626], [22.628661, 120.313501], [22.628639, 120.313443], [22.628514, 120.31311], [22.628499, 120.313069], [22.628465, 120.312979], [22.628362, 120.31302], [22.628241, 120.313073], [22.628128, 120.313111], [22.6281, 120.31312], [22.627763, 120.313247], [22.627709, 120.313082]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_ca43b6781fa3b04803196e84ca6cefa3 = L.polyline(
+                [[22.627709, 120.313082], [22.627763, 120.313247], [22.627284, 120.313411], [22.626942, 120.312383], [22.62649, 120.311009], [22.626457, 120.310913], [22.626415, 120.310793], [22.626323, 120.310828], [22.624843, 120.311408], [22.62363, 120.311864], [22.623577, 120.311883], [22.623409, 120.311947], [22.623305, 120.311985], [22.623246, 120.312008], [22.623142, 120.312048], [22.623057, 120.31208], [22.622988, 120.312107], [22.621894, 120.312528], [22.62183, 120.312552], [22.621762, 120.312583], [22.621708, 120.3126], [22.621659, 120.312619], [22.620562, 120.313051], [22.620528, 120.313065], [22.620453, 120.313094], [22.620345, 120.313138], [22.620241, 120.313179], [22.620139, 120.313222], [22.620058, 120.313253], [22.619993, 120.313279], [22.618889, 120.31371], [22.618846, 120.313726], [22.618792, 120.313747], [22.618672, 120.313796], [22.618631, 120.313812], [22.618023, 120.314057], [22.617178, 120.314371], [22.617135, 120.31424], [22.617071, 120.314044]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_2f39182b52811eeaaf51111158c85e3d = L.polyline(
+                [[22.617071, 120.314044], [22.616983, 120.313774], [22.616648, 120.312731], [22.616637, 120.312698], [22.616625, 120.312648], [22.616602, 120.312577], [22.616581, 120.312513], [22.616571, 120.312485], [22.616327, 120.311764], [22.616081, 120.311012], [22.61576, 120.310047], [22.615656, 120.309737], [22.615234, 120.30847], [22.614701, 120.306871], [22.614293, 120.305659], [22.614211, 120.3054], [22.61419, 120.305336], [22.614136, 120.305173], [22.614132, 120.305162], [22.614041, 120.304889], [22.614032, 120.304861], [22.613941, 120.30459], [22.613929, 120.304559]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var poly_line_5755bee5f9d26a4c8f95036c3a498ad9 = L.polyline(
+                [[22.613929, 120.304559], [22.613862, 120.304381], [22.613837, 120.304297], [22.613823, 120.304251], [22.613734, 120.303953], [22.613718, 120.303898], [22.613692, 120.30381], [22.61365, 120.303668], [22.613538, 120.303349], [22.61345, 120.303049], [22.613429, 120.302986], [22.613334, 120.302693], [22.61332, 120.302633], [22.61324, 120.302386], [22.613229, 120.30235], [22.613197, 120.30225], [22.613169, 120.302177], [22.613142, 120.302084], [22.613112, 120.302], [22.613063, 120.301865], [22.613054, 120.301826], [22.612991, 120.301668], [22.612872, 120.301323], [22.612814, 120.301161], [22.612769, 120.301044], [22.612628, 120.300627], [22.612555, 120.300398], [22.612545, 120.300368], [22.612519, 120.300285], [22.612511, 120.30026], [22.612467, 120.300136], [22.612457, 120.300107], [22.612082, 120.299045], [22.611985, 120.298722], [22.611928, 120.298535], [22.611879, 120.298386], [22.611402, 120.296925], [22.611389, 120.296887], [22.611358, 120.296793], [22.611333, 120.296717], [22.611318, 120.296672], [22.610968, 120.29561]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+    
+            var layer_control_977449e752bd5b1fd2516193014df154 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9eae07c3d357dd9305ee2379640853fb,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_977449e752bd5b1fd2516193014df154.base_layers,
+                layer_control_977449e752bd5b1fd2516193014df154.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_dba3bdf8397a63725b046b49a06f6af6);
+        
+</script>
+</html>
